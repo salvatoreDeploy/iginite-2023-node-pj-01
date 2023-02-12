@@ -1,6 +1,6 @@
 import { Readable, Transform, Writable } from "node:stream";
 
-// Stream de Leituda
+// Stream de Leitura
 
 class OneTorHundredStream extends Readable {
   index = 1;
