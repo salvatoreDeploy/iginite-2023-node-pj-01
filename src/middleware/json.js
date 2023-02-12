@@ -10,7 +10,7 @@ export async function json(req, res) {
   try {
     req.bodyRequest = JSON.parse(Buffer.concat(buffers).toString());
   } catch {
-    req.body = null;
+    req.bodyRequest = null;
   }
 
   res.setHeader("Content-type", "application/json");
